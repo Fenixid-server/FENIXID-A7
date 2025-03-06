@@ -27,7 +27,7 @@
     },
     "OWNER_NUMBER": {
       "description": "Owner's phone number",
-      "value": "94773010580"
+      "value": "94743370472"
     },
     "USER_TIMEZONE": {
       "description": "User timezone",
@@ -39,31 +39,31 @@
     },
     "FENIX_WEL_1": {
       "description": "contact push message 1",
-      "value": "Your Number Has Been Auto Saved🫠"
+      "value": "ＹＯＵＲ ɴᴜᴍʙᴇʀ ᴀᴜᴛᴏ ꜱᴀᴠᴇᴅ ᴅᴏɴᴇ"
     },
     "FENIX_WEL_2": {
       "description": "contact push message 2",
-      "value": "Save And Alert Me If Save 🌹"
+      "value": "ＳＡＶＥ ᴍᴇ ᴘʟᴇᴀꜱᴇ"
     },
     "FENIX_WEL_3": {
       "description": "contact push message 3",
-      "value": "Save and Alert me✅"
+      "value": "ＳＡＶＥ ᴀɴᴅ ᴍɢ ᴘʟᴢ"
     },
     "AUTO_DETECT_1": {
       "description": "Status motion push message 1",
-      "value": "heyyy 😸"
+      "value": "ＨＥＹ ʙʀᴏᴛʜᴇʀ ᴏʀ ꜱɪꜱ"
     },
     "AUTO_DETECT_2": {
       "description": "Status motion push message 2",
-      "value": "ඔයගෙ නම්බරෙ ගත්තෙ ස්ටෙටස් එකකින් 🫠"
+      "value": "ඔයාව 𝗔𝘂𝘁𝗼 𝗦𝗮𝘃𝗲 මාව සෙව් කරන් 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 එකක් දාන්න"
     },
     "BOT_NAME": {
       "description": "Name of the bot",
-      "value": "FENX ID OWNER"
+      "value": "ASR TADASHI"
     },
     "BOT_AGE": {
       "description": "Age of the bot",
-      "value": "26"
+      "value": "16"
     },
     "BOT_LOCATION": {
       "description": "Location of the bot",
@@ -71,7 +71,7 @@
     },
     "BOT_EMAIL": {
       "description": "Email associated with the bot",
-      "value": "privateloginemails@gmail.com"
+      "value": "imeshxcontacts@gmail.com"
     },
     "RELAX_WISHES": {
       "description": "Relaxation message",
