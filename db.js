@@ -1,5 +1,9 @@
+db.js replace the blow code
 const { MongoClient } = require('mongodb');
-const config = require('./config'); // Import config file
+
+// MongoDB URI and database name
+const uri = 'mongodb+srv://PublicFid:PublicFid@cluster0.aahbv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'; // replace with your MongoDB URI
+const dbName = 'PublicFid'; // replace with your database name
 
 // MongoDB client instance
 let db;
@@ -8,10 +12,10 @@ let db;
 async function connectToDB() {
   if (!db) {
     try {
-      const client = new MongoClient(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+      const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
       await client.connect();
       console.log('Connected to MongoDB');
-      db = client.db(config.dbName);
+      db = client.db(dbName);
     } catch (error) {
       console.error('Error connecting to MongoDB:', error);
       throw new Error('MongoDB connection failed');
@@ -19,17 +23,20 @@ async function connectToDB() {
   }
 }
 
-// Get a collection dynamically
-function getCollection(collectionName) {
+// password 
+function getContactsCollection() {
   if (!db) {
     throw new Error('Database not connected');
   }
-  return db.collection(collectionName);
+  return db.collection('mypassword123'); //✅enter here any passkey
 }
 
-// Export functions
-module.exports = {
-  connectToDB,
-  getContactsCollection: () => getCollection(config.collections.contacts),
-  getAuthCollection: () => getCollection(config.collections.googleAuth)
-};
+// Get the authentication collection
+function getAuthCollection() {
+  if (!db) {
+    throw new Error('Database not connected');
+  }
+  return db.collection('google_auth');
+}
+
+module.exports = { connectToDB, getContactsCollection, getAuthCollection };
